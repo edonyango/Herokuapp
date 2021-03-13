@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Automation Demo]">
+  <listeners>
+    <listener class-name="resources.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="The Internet(failed)" parallel="classes">
+    <classes>
+      <class name="elementSuite.ContextMenu">
+        <methods>
+          <include name="alert"/>
+        </methods>
+      </class> <!-- elementSuite.ContextMenu -->
+    </classes>
+  </test> <!-- The Internet(failed) -->
+</suite> <!-- Failed suite [Automation Demo] -->

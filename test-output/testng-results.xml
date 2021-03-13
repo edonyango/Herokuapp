@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Automation Demo" duration-ms="178281" started-at="2021-03-13T05:56:18 EAT" finished-at="2021-03-13T05:59:16 EAT">
+    <groups>
+    </groups>
+    <test name="The Internet" duration-ms="178281" started-at="2021-03-13T05:56:18 EAT" finished-at="2021-03-13T05:59:16 EAT">
+      <class name="elementSuite.AddRemove">
+        <test-method status="PASS" signature="exclusion()[pri:0, instance:elementSuite.AddRemove@7a765367]" name="exclusion" duration-ms="57326" started-at="2021-03-13T05:56:18 EAT" finished-at="2021-03-13T05:57:15 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exclusion -->
+        <test-method status="PASS" signature="inclusion()[pri:0, instance:elementSuite.AddRemove@7a765367]" name="inclusion" duration-ms="15449" started-at="2021-03-13T05:57:15 EAT" finished-at="2021-03-13T05:57:31 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inclusion -->
+      </class> <!-- elementSuite.AddRemove -->
+      <class name="elementSuite.DynamicContent">
+        <test-method status="PASS" signature="addCheckBox()[pri:0, instance:elementSuite.DynamicContent@2a742aa2]" name="addCheckBox" duration-ms="61744" started-at="2021-03-13T05:56:18 EAT" finished-at="2021-03-13T05:57:20 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCheckBox -->
+        <test-method status="PASS" signature="disableInputField()[pri:0, instance:elementSuite.DynamicContent@2a742aa2]" name="disableInputField" duration-ms="52709" started-at="2021-03-13T05:57:20 EAT" finished-at="2021-03-13T05:58:12 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disableInputField -->
+        <test-method status="PASS" signature="enableInputField()[pri:0, instance:elementSuite.DynamicContent@2a742aa2]" name="enableInputField" duration-ms="15964" started-at="2021-03-13T05:58:12 EAT" finished-at="2021-03-13T05:58:28 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enableInputField -->
+        <test-method status="PASS" signature="removeCheckBox()[pri:0, instance:elementSuite.DynamicContent@2a742aa2]" name="removeCheckBox" duration-ms="47812" started-at="2021-03-13T05:58:28 EAT" finished-at="2021-03-13T05:59:16 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeCheckBox -->
+      </class> <!-- elementSuite.DynamicContent -->
+      <class name="elementSuite.ContextMenu">
+        <test-method status="PASS" signature="alert()[pri:0, instance:elementSuite.ContextMenu@3dfc5fb8]" name="alert" duration-ms="53453" started-at="2021-03-13T05:56:18 EAT" finished-at="2021-03-13T05:57:11 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alert -->
+        <test-method status="PASS" signature="contextClick()[pri:0, instance:elementSuite.ContextMenu@3dfc5fb8]" name="contextClick" duration-ms="16147" started-at="2021-03-13T05:57:11 EAT" finished-at="2021-03-13T05:57:27 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contextClick -->
+      </class> <!-- elementSuite.ContextMenu -->
+    </test> <!-- The Internet -->
+  </suite> <!-- Automation Demo -->
+</testng-results>
