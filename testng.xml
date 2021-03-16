@@ -10,6 +10,7 @@
       <class name="elementSuite.AddRemove"/>
       <class name="elementSuite.DynamicContent"/> 
       <class name="elementSuite.ContextMenu"/>
+      <class name="elementSuite.Login"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
