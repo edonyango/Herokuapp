@@ -22,6 +22,9 @@ public class HomePage {
 	@FindBy(xpath="//a[contains(text(),'Dynamic Controls')]")
 	WebElement dynamic;
 	
+	@FindBy(xpath="//a[contains(text(),'Form Authentication')]")
+	WebElement loginFM;
+	
 	public WebElement addElement() {
 		return addRemove;
 	}
@@ -32,5 +35,9 @@ public class HomePage {
 	
 	public WebElement dynamicControls() {
 		return dynamic;
+	}
+	
+	public WebElement loginForm() {
+		return loginFM;
 	}
 }
