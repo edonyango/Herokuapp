@@ -5,12 +5,12 @@
 		<listener class-name="resources.Listeners"/>
 		<listener class-name="resources.ExtentReporterNG"/>
 	</listeners>
-  <test name="The Internet" parallel="classes" thread-count="5">
+  <test name="The Internet">
     <classes>
-      <class name="elementSuite.AddRemove"/>
-      <class name="elementSuite.DynamicContent"/> 
-      <class name="elementSuite.ContextMenu"/>
-      <class name="elementSuite.Login"/>
+      <class name="elementSuite.AddRemoveTest"/>
+      <class name="elementSuite.DynamicContentTest"/> 
+      <class name="elementSuite.ContextMenuTest"/>
+      <class name="elementSuite.LoginTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

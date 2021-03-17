@@ -1,63 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Automation Demo" duration-ms="185230" started-at="2021-03-16T14:48:17 EAT" finished-at="2021-03-16T14:51:22 EAT">
+  <suite name="Default suite" duration-ms="98263" started-at="2021-03-17T13:41:39 EAT" finished-at="2021-03-17T13:43:17 EAT">
     <groups>
     </groups>
-    <test name="The Internet" duration-ms="185230" started-at="2021-03-16T14:48:17 EAT" finished-at="2021-03-16T14:51:22 EAT">
-      <class name="elementSuite.AddRemove">
-        <test-method status="PASS" signature="exclusion()[pri:0, instance:elementSuite.AddRemove@76b0bfab]" name="exclusion" duration-ms="60578" started-at="2021-03-16T14:48:17 EAT" finished-at="2021-03-16T14:49:17 EAT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- exclusion -->
-        <test-method status="PASS" signature="inclusion()[pri:0, instance:elementSuite.AddRemove@76b0bfab]" name="inclusion" duration-ms="24386" started-at="2021-03-16T14:49:17 EAT" finished-at="2021-03-16T14:49:42 EAT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inclusion -->
-      </class> <!-- elementSuite.AddRemove -->
-      <class name="elementSuite.Login">
-        <test-method status="PASS" signature="loginFullCreds()[pri:0, instance:elementSuite.Login@4d50efb8]" name="loginFullCreds" duration-ms="59654" started-at="2021-03-16T14:48:17 EAT" finished-at="2021-03-16T14:49:17 EAT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginFullCreds -->
-        <test-method status="PASS" signature="loginWrongPassword()[pri:0, instance:elementSuite.Login@4d50efb8]" name="loginWrongPassword" duration-ms="25995" started-at="2021-03-16T14:49:17 EAT" finished-at="2021-03-16T14:49:43 EAT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWrongPassword -->
-        <test-method status="PASS" signature="loginWrongUserName()[pri:0, instance:elementSuite.Login@4d50efb8]" name="loginWrongUserName" duration-ms="25285" started-at="2021-03-16T14:49:43 EAT" finished-at="2021-03-16T14:50:08 EAT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWrongUserName -->
-      </class> <!-- elementSuite.Login -->
-      <class name="elementSuite.DynamicContent">
-        <test-method status="PASS" signature="addCheckBox()[pri:0, instance:elementSuite.DynamicContent@3cb1ffe6]" name="addCheckBox" duration-ms="63679" started-at="2021-03-16T14:48:17 EAT" finished-at="2021-03-16T14:49:21 EAT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addCheckBox -->
-        <test-method status="PASS" signature="disableInputField()[pri:0, instance:elementSuite.DynamicContent@3cb1ffe6]" name="disableInputField" duration-ms="55914" started-at="2021-03-16T14:49:21 EAT" finished-at="2021-03-16T14:50:17 EAT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- disableInputField -->
-        <test-method status="PASS" signature="enableInputField()[pri:0, instance:elementSuite.DynamicContent@3cb1ffe6]" name="enableInputField" duration-ms="16116" started-at="2021-03-16T14:50:17 EAT" finished-at="2021-03-16T14:50:33 EAT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enableInputField -->
-        <test-method status="PASS" signature="removeCheckBox()[pri:0, instance:elementSuite.DynamicContent@3cb1ffe6]" name="removeCheckBox" duration-ms="49360" started-at="2021-03-16T14:50:33 EAT" finished-at="2021-03-16T14:51:22 EAT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- removeCheckBox -->
-      </class> <!-- elementSuite.DynamicContent -->
-      <class name="elementSuite.ContextMenu">
-        <test-method status="PASS" signature="alert()[pri:0, instance:elementSuite.ContextMenu@467aecef]" name="alert" duration-ms="55653" started-at="2021-03-16T14:48:17 EAT" finished-at="2021-03-16T14:49:13 EAT">
+    <test name="Default test" duration-ms="98263" started-at="2021-03-17T13:41:39 EAT" finished-at="2021-03-17T13:43:17 EAT">
+      <class name="elementSuite.ContextMenuTest">
+        <test-method status="PASS" signature="alert()[pri:0, instance:elementSuite.ContextMenuTest@63440df3]" name="alert" duration-ms="46322" started-at="2021-03-17T13:41:39 EAT" finished-at="2021-03-17T13:42:25 EAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- alert -->
-        <test-method status="PASS" signature="contextClick()[pri:0, instance:elementSuite.ContextMenu@467aecef]" name="contextClick" duration-ms="32451" started-at="2021-03-16T14:49:13 EAT" finished-at="2021-03-16T14:49:45 EAT">
+        <test-method status="PASS" signature="contextClick()[pri:0, instance:elementSuite.ContextMenuTest@63440df3]" name="contextClick" duration-ms="14983" started-at="2021-03-17T13:42:25 EAT" finished-at="2021-03-17T13:42:40 EAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contextClick -->
-      </class> <!-- elementSuite.ContextMenu -->
-    </test> <!-- The Internet -->
-  </suite> <!-- Automation Demo -->
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.ContextMenuTest@63440df3]" name="browserClose" is-config="true" duration-ms="36914" started-at="2021-03-17T13:42:40 EAT" finished-at="2021-03-17T13:43:17 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- elementSuite.ContextMenuTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
