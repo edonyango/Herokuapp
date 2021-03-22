@@ -6,7 +6,6 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
@@ -20,21 +19,20 @@ import setup.Base;
 public class DynamicContentTest extends Base {
 	
 	@AfterTest
-	public void browserClose() {
-		WebDriver driver = driver();
+	public void browserClose() throws IOException {
+		driver = initializeDriver();
 		driver.close();
 	}
 	
 	@Test
 	public void removeCheckBox() throws IOException, InterruptedException {
-		setProp();		
-		WebDriver driver = driver();
+		driver = initializeDriver();
 		Utilities util = new Utilities(driver);
 		HomePage homePg = new HomePage(driver);
 		DynamicContentPage dynamicPg = new DynamicContentPage(driver);
 		WebDriverWait wait = new WebDriverWait(driver, 5);
-		String url = util.fetchProperty("webURL");
-		driver.get(url);
+		String baseUrl = util.fetchProperty("webURL");
+		driver.get(baseUrl);
 		homePg.dynamicControls().click();
 		dynamicPg.checkBox().click();
 		dynamicPg.removeButton().click();
@@ -45,14 +43,13 @@ public class DynamicContentTest extends Base {
 	
 	@Test
 	public void addCheckBox() throws IOException {
-		setProp();		
-		WebDriver driver = driver();
+		driver = initializeDriver();
 		Utilities util = new Utilities(driver);
 		HomePage homePg = new HomePage(driver);
 		DynamicContentPage dynamicPg = new DynamicContentPage(driver);
 		WebDriverWait wait = new WebDriverWait(driver, 5);
-		String url = util.fetchProperty("webURL");
-		driver.get(url);
+		String baseUrl = util.fetchProperty("webURL");
+		driver.get(baseUrl);
 		homePg.dynamicControls().click();
 		dynamicPg.checkBox().click();
 		dynamicPg.removeButton().click();
@@ -65,14 +62,13 @@ public class DynamicContentTest extends Base {
 	
 	@Test
 	public void enableInputField() throws IOException {
-		setProp();		
-		WebDriver driver = driver();
+		driver = initializeDriver();
 		Utilities util = new Utilities(driver);
 		HomePage homePg = new HomePage(driver);
 		DynamicContentPage dynamicPg = new DynamicContentPage(driver);
 		WebDriverWait wait = new WebDriverWait(driver, 5);
-		String url = util.fetchProperty("webURL");
-		driver.get(url);
+		String baseUrl = util.fetchProperty("webURL");
+		driver.get(baseUrl);
 		homePg.dynamicControls().click();
 		dynamicPg.enableButton().click();
 		wait.until(ExpectedConditions.visibilityOf(dynamicPg.message()));
@@ -82,14 +78,13 @@ public class DynamicContentTest extends Base {
 	
 	@Test
 	public void disableInputField() throws IOException {
-		setProp();		
-		WebDriver driver = driver();
+		driver = initializeDriver();
 		Utilities util = new Utilities(driver);
 		HomePage homePg = new HomePage(driver);
 		DynamicContentPage dynamicPg = new DynamicContentPage(driver);
 		WebDriverWait wait = new WebDriverWait(driver, 5);
-		String url = util.fetchProperty("webURL");
-		driver.get(url);
+		String baseUrl = util.fetchProperty("webURL");
+		driver.get(baseUrl);
 		homePg.dynamicControls().click();
 		dynamicPg.enableButton().click();
 		wait.until(ExpectedConditions.visibilityOf(dynamicPg.message()));

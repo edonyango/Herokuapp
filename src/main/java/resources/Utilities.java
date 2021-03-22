@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 
 public class Utilities {
@@ -19,6 +20,15 @@ public class Utilities {
 		projectProp.load(loadProperties);
 		String url = (String) projectProp.getProperty(prop);		
 		return url;
+	}
+	
+	public boolean isAlertPresent(WebDriver driver) {
+		try {
+			driver.switchTo().alert();
+			return true;
+		} catch (NoAlertPresentException e) {
+			return false;
+		}
 	}
 
 }

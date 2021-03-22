@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="elementSuite.LoginTest">
+      <class name="elementSuite.ContextMenuTest">
         <methods>
-          <include name="loginWrongUserName"/>
+          <include name="alert"/>
+          <include name="browserClose"/>
+          <include name="contextClick"/>
         </methods>
-      </class> <!-- elementSuite.LoginTest -->
+      </class> <!-- elementSuite.ContextMenuTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="98263" started-at="2021-03-17T13:41:39 EAT" finished-at="2021-03-17T13:43:17 EAT">
+  <suite name="Default suite" duration-ms="21618" started-at="2021-03-22T11:47:53 EAT" finished-at="2021-03-22T11:48:14 EAT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="98263" started-at="2021-03-17T13:41:39 EAT" finished-at="2021-03-17T13:43:17 EAT">
+    <test name="Default test" duration-ms="21618" started-at="2021-03-22T11:47:53 EAT" finished-at="2021-03-22T11:48:14 EAT">
       <class name="elementSuite.ContextMenuTest">
-        <test-method status="PASS" signature="alert()[pri:0, instance:elementSuite.ContextMenuTest@63440df3]" name="alert" duration-ms="46322" started-at="2021-03-17T13:41:39 EAT" finished-at="2021-03-17T13:42:25 EAT">
+        <test-method status="PASS" signature="alert()[pri:0, instance:elementSuite.ContextMenuTest@63440df3]" name="alert" duration-ms="14480" started-at="2021-03-22T11:47:53 EAT" finished-at="2021-03-22T11:48:07 EAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- alert -->
-        <test-method status="PASS" signature="contextClick()[pri:0, instance:elementSuite.ContextMenuTest@63440df3]" name="contextClick" duration-ms="14983" started-at="2021-03-17T13:42:25 EAT" finished-at="2021-03-17T13:42:40 EAT">
+        <test-method status="PASS" signature="contextClick()[pri:0, instance:elementSuite.ContextMenuTest@63440df3]" name="contextClick" duration-ms="5230" started-at="2021-03-22T11:48:07 EAT" finished-at="2021-03-22T11:48:12 EAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contextClick -->
-        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.ContextMenuTest@63440df3]" name="browserClose" is-config="true" duration-ms="36914" started-at="2021-03-17T13:42:40 EAT" finished-at="2021-03-17T13:43:17 EAT">
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.ContextMenuTest@63440df3]" name="browserClose" is-config="true" duration-ms="1854" started-at="2021-03-22T11:48:12 EAT" finished-at="2021-03-22T11:48:14 EAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->

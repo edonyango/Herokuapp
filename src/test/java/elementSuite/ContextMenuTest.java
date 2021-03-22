@@ -5,8 +5,6 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 
-import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
@@ -20,21 +18,20 @@ import setup.Base;
 public class ContextMenuTest extends Base {
 	
 	@AfterTest
-	public void browserClose() {
-		WebDriver driver = driver();
+	public void browserClose() throws IOException {
+		driver = initializeDriver();
 		driver.close();
 	}
 
 	@Test
 	public void contextClick() throws IOException, InterruptedException {
-		setProp();
-		WebDriver driver = driver();
+		driver = initializeDriver();
 		Utilities util = new Utilities(driver);
 		HomePage homePg = new HomePage(driver);
 		ContextMenuPage contextPg = new ContextMenuPage(driver);
 		Actions action = new Actions(driver);
-		String url = util.fetchProperty("webURL");
-		driver.get(url);
+		String baseUrl = util.fetchProperty("webURL");
+		driver.get(baseUrl);
 		homePg.contexMenu().click();
 		WebElement move = contextPg.contextMenu();
 		action.moveToElement(move).contextClick().build().perform();
@@ -45,28 +42,18 @@ public class ContextMenuTest extends Base {
 
 	@Test
 	public void alert() throws IOException {
-		setProp();
-		WebDriver driver = driver();
+		driver = initializeDriver();
 		Utilities util = new Utilities(driver);
 		HomePage homePg = new HomePage(driver);
 		ContextMenuPage contextPg = new ContextMenuPage(driver);
 		Actions action = new Actions(driver);
-		String url = util.fetchProperty("webURL");
-		driver.get(url);
+		String baseUrl = util.fetchProperty("webURL");
+		driver.get(baseUrl);
 		homePg.contexMenu().click();
 		WebElement move = contextPg.contextMenu();
 		action.moveToElement(move).contextClick().build().perform();
 		driver.switchTo().alert().dismiss();
-		assertFalse(isAlertPresent(driver));
+		assertFalse(util.isAlertPresent(driver));
 	}
-
-	public boolean isAlertPresent(WebDriver driver) {
-		try {
-			driver.switchTo().alert();
-			return true;
-		} catch (NoAlertPresentException e) {
-			return false;
-		}
-	}
-
+	
 }

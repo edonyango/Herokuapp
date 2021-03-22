@@ -4,7 +4,6 @@ import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -16,22 +15,21 @@ import setup.Base;
 public class LoginTest extends Base {
 
 	@AfterTest
-	public void browserClose() {
-		WebDriver driver = driver();
+	public void browserClose() throws IOException {
+		driver = initializeDriver();
 		driver.close();
 	}
 	
 	@Test
 	public void loginFullCreds() throws IOException {
-		setProp();
-		WebDriver driver = driver();
+		driver = initializeDriver();
 		Utilities util = new Utilities(driver);
 		HomePage homePg = new HomePage(driver);
 		LoginPage loginPg = new LoginPage(driver);
-		String url = util.fetchProperty("webURL");
+		String baseUrl = util.fetchProperty("webURL");
 		String userName = util.fetchProperty("userName");
 		String passWord = util.fetchProperty("passWord");
-		driver.get(url);
+		driver.get(baseUrl);
 		homePg.loginForm().click();
 		loginPg.userName().sendKeys(userName);
 		loginPg.passWord().sendKeys(passWord);
@@ -43,15 +41,14 @@ public class LoginTest extends Base {
 	
 	@Test
 	public void loginWrongPassword() throws IOException {
-		setProp();
-		WebDriver driver = driver();
+		driver = initializeDriver();
 		Utilities util = new Utilities(driver);
 		HomePage homePg = new HomePage(driver);
 		LoginPage loginPg = new LoginPage(driver);
-		String url = util.fetchProperty("webURL");
+		String baseUrl = util.fetchProperty("webURL");
 		String userName = util.fetchProperty("userName");
 		String passWord = util.fetchProperty("passWord1");
-		driver.get(url);
+		driver.get(baseUrl);
 		homePg.loginForm().click();
 		loginPg.userName().sendKeys(userName);
 		loginPg.passWord().sendKeys(passWord);
@@ -63,15 +60,14 @@ public class LoginTest extends Base {
 
 	@Test
 	public void loginWrongUserName() throws IOException {
-		setProp();
-		WebDriver driver = driver();
+		driver = initializeDriver();
 		Utilities util = new Utilities(driver);
 		HomePage homePg = new HomePage(driver);
 		LoginPage loginPg = new LoginPage(driver);
-		String url = util.fetchProperty("webURL");
+		String baseUrl = util.fetchProperty("webURL");
 		String userName = util.fetchProperty("userName1");
 		String passWord = util.fetchProperty("passWord");
-		driver.get(url);
+		driver.get(baseUrl);
 		homePg.loginForm().click();
 		loginPg.userName().sendKeys(userName);
 		loginPg.passWord().sendKeys(passWord);
