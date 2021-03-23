@@ -1,37 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22594" started-at="2021-03-22T16:10:49 EAT" finished-at="2021-03-22T16:11:11 EAT">
+  <suite name="The Internet Herokuapp E2E Test" duration-ms="105661" started-at="2021-03-23T12:31:52 EAT" finished-at="2021-03-23T12:33:38 EAT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22594" started-at="2021-03-22T16:10:49 EAT" finished-at="2021-03-22T16:11:11 EAT">
-      <class name="elementSuite.ContextMenuTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:elementSuite.ContextMenuTest@2bbf4b8b]" name="initialize" is-config="true" duration-ms="10772" started-at="2021-03-22T16:10:49 EAT" finished-at="2021-03-22T16:11:00 EAT">
+    <test name="Add/Remove Buttons" duration-ms="31406" started-at="2021-03-23T12:31:52 EAT" finished-at="2021-03-23T12:32:23 EAT">
+      <class name="elementSuite.AddRemoveTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:elementSuite.AddRemoveTest@58c1670b]" name="initialize" is-config="true" duration-ms="9202" started-at="2021-03-23T12:31:52 EAT" finished-at="2021-03-23T12:32:01 EAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="alert()[pri:0, instance:elementSuite.ContextMenuTest@2bbf4b8b]" name="alert" duration-ms="638" started-at="2021-03-22T16:11:00 EAT" finished-at="2021-03-22T16:11:00 EAT">
+        <test-method status="PASS" signature="exclusion()[pri:0, instance:elementSuite.AddRemoveTest@58c1670b]" name="exclusion" duration-ms="15607" started-at="2021-03-23T12:32:01 EAT" finished-at="2021-03-23T12:32:17 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exclusion -->
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.AddRemoveTest@58c1670b]" name="browserClose" is-config="true" duration-ms="120" started-at="2021-03-23T12:32:17 EAT" finished-at="2021-03-23T12:32:17 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:elementSuite.AddRemoveTest@58c1670b]" name="initialize" is-config="true" duration-ms="5910" started-at="2021-03-23T12:32:17 EAT" finished-at="2021-03-23T12:32:23 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="inclusion()[pri:0, instance:elementSuite.AddRemoveTest@58c1670b]" name="inclusion" duration-ms="446" started-at="2021-03-23T12:32:23 EAT" finished-at="2021-03-23T12:32:23 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inclusion -->
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.AddRemoveTest@58c1670b]" name="browserClose" is-config="true" duration-ms="70" started-at="2021-03-23T12:32:23 EAT" finished-at="2021-03-23T12:32:23 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method status="PASS" signature="killDriverObject()[pri:0, instance:elementSuite.AddRemoveTest@58c1670b]" name="killDriverObject" is-config="true" duration-ms="0" started-at="2021-03-23T12:32:23 EAT" finished-at="2021-03-23T12:32:23 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killDriverObject -->
+      </class> <!-- elementSuite.AddRemoveTest -->
+    </test> <!-- Add/Remove Buttons -->
+    <test name="Dynamic Content Test" duration-ms="41627" started-at="2021-03-23T12:32:23 EAT" finished-at="2021-03-23T12:33:05 EAT">
+      <class name="elementSuite.DynamicContentTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:elementSuite.DynamicContentTest@4a87761d]" name="initialize" is-config="true" duration-ms="5894" started-at="2021-03-23T12:32:23 EAT" finished-at="2021-03-23T12:32:29 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="addCheckBox()[pri:0, instance:elementSuite.DynamicContentTest@4a87761d]" name="addCheckBox" duration-ms="6977" started-at="2021-03-23T12:32:29 EAT" finished-at="2021-03-23T12:32:36 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCheckBox -->
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.DynamicContentTest@4a87761d]" name="browserClose" is-config="true" duration-ms="63" started-at="2021-03-23T12:32:36 EAT" finished-at="2021-03-23T12:32:36 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:elementSuite.DynamicContentTest@4a87761d]" name="initialize" is-config="true" duration-ms="4583" started-at="2021-03-23T12:32:36 EAT" finished-at="2021-03-23T12:32:41 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="disableInputField()[pri:0, instance:elementSuite.DynamicContentTest@4a87761d]" name="disableInputField" duration-ms="6815" started-at="2021-03-23T12:32:41 EAT" finished-at="2021-03-23T12:32:48 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disableInputField -->
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.DynamicContentTest@4a87761d]" name="browserClose" is-config="true" duration-ms="195" started-at="2021-03-23T12:32:48 EAT" finished-at="2021-03-23T12:32:48 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:elementSuite.DynamicContentTest@4a87761d]" name="initialize" is-config="true" duration-ms="4729" started-at="2021-03-23T12:32:48 EAT" finished-at="2021-03-23T12:32:53 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="enableInputField()[pri:0, instance:elementSuite.DynamicContentTest@4a87761d]" name="enableInputField" duration-ms="3780" started-at="2021-03-23T12:32:53 EAT" finished-at="2021-03-23T12:32:57 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enableInputField -->
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.DynamicContentTest@4a87761d]" name="browserClose" is-config="true" duration-ms="34" started-at="2021-03-23T12:32:57 EAT" finished-at="2021-03-23T12:32:57 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:elementSuite.DynamicContentTest@4a87761d]" name="initialize" is-config="true" duration-ms="4651" started-at="2021-03-23T12:32:57 EAT" finished-at="2021-03-23T12:33:01 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="removeCheckBox()[pri:0, instance:elementSuite.DynamicContentTest@4a87761d]" name="removeCheckBox" duration-ms="3857" started-at="2021-03-23T12:33:01 EAT" finished-at="2021-03-23T12:33:05 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeCheckBox -->
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.DynamicContentTest@4a87761d]" name="browserClose" is-config="true" duration-ms="40" started-at="2021-03-23T12:33:05 EAT" finished-at="2021-03-23T12:33:05 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method status="PASS" signature="killDriverObject()[pri:0, instance:elementSuite.DynamicContentTest@4a87761d]" name="killDriverObject" is-config="true" duration-ms="0" started-at="2021-03-23T12:33:05 EAT" finished-at="2021-03-23T12:33:05 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killDriverObject -->
+      </class> <!-- elementSuite.DynamicContentTest -->
+    </test> <!-- Dynamic Content Test -->
+    <test name="Context Menu Test" duration-ms="11582" started-at="2021-03-23T12:33:05 EAT" finished-at="2021-03-23T12:33:17 EAT">
+      <class name="elementSuite.ContextMenuTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:elementSuite.ContextMenuTest@42eca56e]" name="initialize" is-config="true" duration-ms="5883" started-at="2021-03-23T12:33:05 EAT" finished-at="2021-03-23T12:33:11 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="alert()[pri:0, instance:elementSuite.ContextMenuTest@42eca56e]" name="alert" duration-ms="550" started-at="2021-03-23T12:33:11 EAT" finished-at="2021-03-23T12:33:12 EAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- alert -->
-        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.ContextMenuTest@2bbf4b8b]" name="browserClose" is-config="true" duration-ms="2408" started-at="2021-03-22T16:11:00 EAT" finished-at="2021-03-22T16:11:03 EAT">
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.ContextMenuTest@42eca56e]" name="browserClose" is-config="true" duration-ms="51" started-at="2021-03-23T12:33:12 EAT" finished-at="2021-03-23T12:33:12 EAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:elementSuite.ContextMenuTest@2bbf4b8b]" name="initialize" is-config="true" duration-ms="5893" started-at="2021-03-22T16:11:03 EAT" finished-at="2021-03-22T16:11:09 EAT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:elementSuite.ContextMenuTest@42eca56e]" name="initialize" is-config="true" duration-ms="4520" started-at="2021-03-23T12:33:12 EAT" finished-at="2021-03-23T12:33:16 EAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="contextClick()[pri:0, instance:elementSuite.ContextMenuTest@2bbf4b8b]" name="contextClick" duration-ms="771" started-at="2021-03-22T16:11:09 EAT" finished-at="2021-03-22T16:11:09 EAT">
+        <test-method status="PASS" signature="contextClick()[pri:0, instance:elementSuite.ContextMenuTest@42eca56e]" name="contextClick" duration-ms="521" started-at="2021-03-23T12:33:16 EAT" finished-at="2021-03-23T12:33:17 EAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contextClick -->
-        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.ContextMenuTest@2bbf4b8b]" name="browserClose" is-config="true" duration-ms="2060" started-at="2021-03-22T16:11:09 EAT" finished-at="2021-03-22T16:11:11 EAT">
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.ContextMenuTest@42eca56e]" name="browserClose" is-config="true" duration-ms="53" started-at="2021-03-23T12:33:17 EAT" finished-at="2021-03-23T12:33:17 EAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
+        <test-method status="PASS" signature="killDriverObject()[pri:0, instance:elementSuite.ContextMenuTest@42eca56e]" name="killDriverObject" is-config="true" duration-ms="0" started-at="2021-03-23T12:33:17 EAT" finished-at="2021-03-23T12:33:17 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killDriverObject -->
       </class> <!-- elementSuite.ContextMenuTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Context Menu Test -->
+    <test name="Login Test" duration-ms="20997" started-at="2021-03-23T12:33:17 EAT" finished-at="2021-03-23T12:33:38 EAT">
+      <class name="elementSuite.LoginTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:elementSuite.LoginTest@43bd930a]" name="initialize" is-config="true" duration-ms="5808" started-at="2021-03-23T12:33:17 EAT" finished-at="2021-03-23T12:33:23 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="loginFullCreds()[pri:0, instance:elementSuite.LoginTest@43bd930a]" name="loginFullCreds" duration-ms="1538" started-at="2021-03-23T12:33:23 EAT" finished-at="2021-03-23T12:33:24 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFullCreds -->
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.LoginTest@43bd930a]" name="browserClose" is-config="true" duration-ms="59" started-at="2021-03-23T12:33:24 EAT" finished-at="2021-03-23T12:33:24 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:elementSuite.LoginTest@43bd930a]" name="initialize" is-config="true" duration-ms="5853" started-at="2021-03-23T12:33:24 EAT" finished-at="2021-03-23T12:33:30 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="loginWrongPassword()[pri:0, instance:elementSuite.LoginTest@43bd930a]" name="loginWrongPassword" duration-ms="1574" started-at="2021-03-23T12:33:30 EAT" finished-at="2021-03-23T12:33:32 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWrongPassword -->
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.LoginTest@43bd930a]" name="browserClose" is-config="true" duration-ms="33" started-at="2021-03-23T12:33:32 EAT" finished-at="2021-03-23T12:33:32 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:elementSuite.LoginTest@43bd930a]" name="initialize" is-config="true" duration-ms="4567" started-at="2021-03-23T12:33:32 EAT" finished-at="2021-03-23T12:33:36 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="loginWrongUserName()[pri:0, instance:elementSuite.LoginTest@43bd930a]" name="loginWrongUserName" duration-ms="1470" started-at="2021-03-23T12:33:36 EAT" finished-at="2021-03-23T12:33:38 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWrongUserName -->
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.LoginTest@43bd930a]" name="browserClose" is-config="true" duration-ms="91" started-at="2021-03-23T12:33:38 EAT" finished-at="2021-03-23T12:33:38 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method status="PASS" signature="killDriverObject()[pri:0, instance:elementSuite.LoginTest@43bd930a]" name="killDriverObject" is-config="true" duration-ms="0" started-at="2021-03-23T12:33:38 EAT" finished-at="2021-03-23T12:33:38 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killDriverObject -->
+      </class> <!-- elementSuite.LoginTest -->
+    </test> <!-- Login Test -->
+  </suite> <!-- The Internet Herokuapp E2E Test -->
 </testng-results>

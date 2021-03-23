@@ -27,7 +27,7 @@ public class ExtentReporterNG implements IReporter {
  
     public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
     	
-        htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"\\test-output\\reports\\Extentreport.html");
+        htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"\\Reports\\htmlreport.html");
        extent = new ExtentReports();
         
         extent.attachReporter(htmlReporter);
@@ -72,7 +72,7 @@ public class ExtentReporterNG implements IReporter {
         }
     }
  
-    @SuppressWarnings("unused")
+	@SuppressWarnings("unused")
 	private Date getTime(long millis) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(millis);

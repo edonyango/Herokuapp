@@ -1,19 +1,15 @@
 package resources;
 
-import java.io.File;
 import java.io.IOException;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class Listeners implements ITestListener {
+import setup.Base;
 
+public class Listeners implements ITestListener {
+	Base bas = new Base();
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
@@ -28,16 +24,13 @@ public class Listeners implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		/* String currentDir = System.getProperty("user.dir"); */
-		String s = result.getName();
-		WebDriver driver = new ChromeDriver();
-		File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		
 		try {
-			FileUtils.copyFile(screenshot, new File("C:\\Users\\eonyango\\eclipse-workspace\\Herokuapp\\src\\screenshots\\"+s+".png"));
+			bas.getScreenshot(result.getName());
 		} catch (IOException e) {
-			System.out.println(e.getMessage());
-		}
-			
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
 	}
 
 	@Override

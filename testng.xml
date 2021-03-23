@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Automation Demo">
+<suite name="The Internet Herokuapp E2E Test">
 	<listeners>
 		<listener class-name="resources.Listeners"/>
 		<listener class-name="resources.ExtentReporterNG"/>
 	</listeners>
-  <test name="The Internet">
+  <test name="Add/Remove Buttons">
     <classes>
-      <class name="elementSuite.AddRemoveTest"/>
-      <class name="elementSuite.DynamicContentTest"/> 
-      <class name="elementSuite.ContextMenuTest"/>
-      <class name="elementSuite.LoginTest"/>
+      <class name="elementSuite.AddRemoveTest"/>      
     </classes>
+  </test>
+  <test name="Dynamic Content Test">
+  	<classes>
+  		<class name="elementSuite.DynamicContentTest"/>
+  	</classes>
+  </test>
+  <test name="Context Menu Test">
+  	<classes>
+  		<class name="elementSuite.ContextMenuTest"/>
+  	</classes>
+  </test>
+  <test name="Login Test">
+  	<classes>
+  		<class name="elementSuite.LoginTest"/>
+  	</classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
