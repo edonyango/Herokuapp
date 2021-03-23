@@ -7,7 +7,8 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import pageObject.ContextMenuPage;
@@ -16,22 +17,19 @@ import resources.Utilities;
 import setup.Base;
 
 public class ContextMenuTest extends Base {
-	
-	@AfterTest
-	public void browserClose() throws IOException {
-		driver = initializeDriver();
-		driver.close();
-	}
 
-	@Test
-	public void contextClick() throws IOException, InterruptedException {
+	@BeforeMethod
+	public void initialize() throws IOException, InterruptedException {
 		driver = initializeDriver();
-		Utilities util = new Utilities(driver);
+		String baseUrl = prop.getProperty("webURL");
+		driver.get(baseUrl);
+	}
+	
+	@Test
+	public void contextClick() throws IOException, InterruptedException {		
 		HomePage homePg = new HomePage(driver);
 		ContextMenuPage contextPg = new ContextMenuPage(driver);
 		Actions action = new Actions(driver);
-		String baseUrl = util.fetchProperty("webURL");
-		driver.get(baseUrl);
 		homePg.contexMenu().click();
 		WebElement move = contextPg.contextMenu();
 		action.moveToElement(move).contextClick().build().perform();
@@ -41,19 +39,22 @@ public class ContextMenuTest extends Base {
 	}
 
 	@Test
-	public void alert() throws IOException {
-		driver = initializeDriver();
+	public void alert() throws IOException {		
 		Utilities util = new Utilities(driver);
 		HomePage homePg = new HomePage(driver);
 		ContextMenuPage contextPg = new ContextMenuPage(driver);
-		Actions action = new Actions(driver);
-		String baseUrl = util.fetchProperty("webURL");
-		driver.get(baseUrl);
+		Actions action = new Actions(driver);		
 		homePg.contexMenu().click();
 		WebElement move = contextPg.contextMenu();
 		action.moveToElement(move).contextClick().build().perform();
 		driver.switchTo().alert().dismiss();
 		assertFalse(util.isAlertPresent(driver));
 	}
-	
+
+	@AfterMethod
+	public void browserClose() throws IOException {
+		driver = initializeDriver();
+		driver.close();
+	}
+
 }

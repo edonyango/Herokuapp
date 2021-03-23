@@ -2,20 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21618" started-at="2021-03-22T11:47:53 EAT" finished-at="2021-03-22T11:48:14 EAT">
+  <suite name="Default suite" duration-ms="22594" started-at="2021-03-22T16:10:49 EAT" finished-at="2021-03-22T16:11:11 EAT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21618" started-at="2021-03-22T11:47:53 EAT" finished-at="2021-03-22T11:48:14 EAT">
+    <test name="Default test" duration-ms="22594" started-at="2021-03-22T16:10:49 EAT" finished-at="2021-03-22T16:11:11 EAT">
       <class name="elementSuite.ContextMenuTest">
-        <test-method status="PASS" signature="alert()[pri:0, instance:elementSuite.ContextMenuTest@63440df3]" name="alert" duration-ms="14480" started-at="2021-03-22T11:47:53 EAT" finished-at="2021-03-22T11:48:07 EAT">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:elementSuite.ContextMenuTest@2bbf4b8b]" name="initialize" is-config="true" duration-ms="10772" started-at="2021-03-22T16:10:49 EAT" finished-at="2021-03-22T16:11:00 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="alert()[pri:0, instance:elementSuite.ContextMenuTest@2bbf4b8b]" name="alert" duration-ms="638" started-at="2021-03-22T16:11:00 EAT" finished-at="2021-03-22T16:11:00 EAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- alert -->
-        <test-method status="PASS" signature="contextClick()[pri:0, instance:elementSuite.ContextMenuTest@63440df3]" name="contextClick" duration-ms="5230" started-at="2021-03-22T11:48:07 EAT" finished-at="2021-03-22T11:48:12 EAT">
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.ContextMenuTest@2bbf4b8b]" name="browserClose" is-config="true" duration-ms="2408" started-at="2021-03-22T16:11:00 EAT" finished-at="2021-03-22T16:11:03 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:elementSuite.ContextMenuTest@2bbf4b8b]" name="initialize" is-config="true" duration-ms="5893" started-at="2021-03-22T16:11:03 EAT" finished-at="2021-03-22T16:11:09 EAT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="contextClick()[pri:0, instance:elementSuite.ContextMenuTest@2bbf4b8b]" name="contextClick" duration-ms="771" started-at="2021-03-22T16:11:09 EAT" finished-at="2021-03-22T16:11:09 EAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contextClick -->
-        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.ContextMenuTest@63440df3]" name="browserClose" is-config="true" duration-ms="1854" started-at="2021-03-22T11:48:12 EAT" finished-at="2021-03-22T11:48:14 EAT">
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.ContextMenuTest@2bbf4b8b]" name="browserClose" is-config="true" duration-ms="2060" started-at="2021-03-22T16:11:09 EAT" finished-at="2021-03-22T16:11:11 EAT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->

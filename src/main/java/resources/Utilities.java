@@ -18,8 +18,8 @@ public class Utilities {
 		FileInputStream loadProperties = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\setup\\global.properties");
 		Properties projectProp = new Properties();
 		projectProp.load(loadProperties);
-		String url = (String) projectProp.getProperty(prop);		
-		return url;
+		String propertyValue = (String) projectProp.getProperty(prop);		
+		return propertyValue;
 	}
 	
 	public boolean isAlertPresent(WebDriver driver) {

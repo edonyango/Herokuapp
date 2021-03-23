@@ -14,8 +14,9 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class Base {
 	public WebDriver driver;
+	public Properties prop;
 	public WebDriver initializeDriver () throws IOException {
-		Properties prop = new Properties();
+		prop = new Properties();
 		FileInputStream fis = new  FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\setup\\global.properties");
 		prop.load(fis);
 		
