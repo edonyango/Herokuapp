@@ -76,12 +76,6 @@ public class Listeners implements ITestListener {
 	}
 
 	@Override
-	protected void finalize() throws Throwable {
-		// TODO Auto-generated method stub
-		super.finalize();
-	}
-
-	@Override
 	public int hashCode() {
 		// TODO Auto-generated method stub
 		return super.hashCode();

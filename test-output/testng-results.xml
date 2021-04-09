@@ -1,41 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34263" started-at="2021-03-31T11:20:51 EAT" finished-at="2021-03-31T11:21:25 EAT">
+  <suite started-at="2021-04-07T15:42:41 EAT" name="Default suite" finished-at="2021-04-07T15:45:26 EAT" duration-ms="165051">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@fa49800]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="34263" started-at="2021-03-31T11:20:51 EAT" finished-at="2021-03-31T11:21:25 EAT">
-      <class name="elementSuite.AddRemoveTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:elementSuite.AddRemoveTest@69b0fd6f]" name="initialize" is-config="true" duration-ms="10286" started-at="2021-03-31T11:20:51 EAT" finished-at="2021-03-31T11:21:01 EAT">
+    <test started-at="2021-04-07T15:42:41 EAT" name="Default test" finished-at="2021-04-07T15:45:26 EAT" duration-ms="165051">
+      <class name="cucumberOptions.TestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:cucumberOptions.TestRunner@fa49800]" started-at="2021-04-07T15:42:41 EAT" name="setUpClass" finished-at="2021-04-07T15:42:42 EAT" duration-ms="802" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="exclusion()[pri:0, instance:elementSuite.AddRemoveTest@69b0fd6f]" name="exclusion" duration-ms="16537" started-at="2021-03-31T11:21:01 EAT" finished-at="2021-03-31T11:21:18 EAT">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@fa49800]" started-at="2021-04-07T15:42:42 EAT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-04-07T15:43:34 EAT" duration-ms="51590" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Add-Remove Buttons]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- exclusion -->
-        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.AddRemoveTest@69b0fd6f]" name="browserClose" is-config="true" duration-ms="165" started-at="2021-03-31T11:21:18 EAT" finished-at="2021-03-31T11:21:18 EAT">
+        </test-method> <!-- feature -->
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@fa49800]" started-at="2021-04-07T15:43:34 EAT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-04-07T15:44:27 EAT" duration-ms="53071" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WebApp Login]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserClose -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:elementSuite.AddRemoveTest@69b0fd6f]" name="initialize" is-config="true" duration-ms="6428" started-at="2021-03-31T11:21:18 EAT" finished-at="2021-03-31T11:21:24 EAT">
+        </test-method> <!-- feature -->
+        <test-method signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@fa49800]" started-at="2021-04-07T15:44:27 EAT" name="feature" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-04-07T15:45:26 EAT" duration-ms="59258" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WebApp Login]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="inclusion()[pri:0, instance:elementSuite.AddRemoveTest@69b0fd6f]" name="inclusion" duration-ms="679" started-at="2021-03-31T11:21:24 EAT" finished-at="2021-03-31T11:21:25 EAT">
+        </test-method> <!-- feature -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestRunner@fa49800]" started-at="2021-04-07T15:45:26 EAT" name="tearDownClass" finished-at="2021-04-07T15:45:26 EAT" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- inclusion -->
-        <test-method status="PASS" signature="browserClose()[pri:0, instance:elementSuite.AddRemoveTest@69b0fd6f]" name="browserClose" is-config="true" duration-ms="96" started-at="2021-03-31T11:21:25 EAT" finished-at="2021-03-31T11:21:25 EAT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserClose -->
-        <test-method status="PASS" signature="killDriverObject()[pri:0, instance:elementSuite.AddRemoveTest@69b0fd6f]" name="killDriverObject" is-config="true" duration-ms="0" started-at="2021-03-31T11:21:25 EAT" finished-at="2021-03-31T11:21:25 EAT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- killDriverObject -->
-      </class> <!-- elementSuite.AddRemoveTest -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumberOptions.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
