@@ -31,7 +31,7 @@ public class Base {
 		String currentDir = System.getProperty("user.dir");
 		if (browserName.equals("chrome")) {
 			
-			System.setProperty("webdriver.chrome.driver", currentDir + "\\src\\chromedriver89.exe");
+			System.setProperty("webdriver.chrome.driver", currentDir + "\\src\\chromedriver.exe");
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("enable-automation");
 			options.addArguments("--headless");
